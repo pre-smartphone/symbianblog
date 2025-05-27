@@ -1,124 +1,139 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Symbian & Old Tech Blog</title>
-  <style>
-    /* Classic retro vibes */
-    body {
-      background: #f0f0f0;
-      font-family: "Courier New", Courier, monospace;
-      color: #222;
-      margin: 0;
-      padding: 0 20px;
-    }
-    header {
-      background: #004080;
-      color: white;
-      padding: 20px;
-      text-align: center;
-      border-bottom: 4px solid #0080ff;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      text-shadow: 1px 1px #000;
-    }
-    nav {
-      margin: 15px 0;
-      text-align: center;
-    }
-    nav a {
-      color: #004080;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    main {
-      max-width: 800px;
-      margin: auto;
-      background: white;
-      padding: 20px;
-      box-shadow: 3px 3px 8px rgba(0,0,0,0.1);
-    }
-    article {
-      margin-bottom: 40px;
-    }
-    article h2 {
-      color: #004080;
-      border-bottom: 2px solid #0080ff;
-      padding-bottom: 5px;
-    }
-    footer {
-      text-align: center;
-      padding: 15px;
-      font-size: 0.9em;
-      color: #666;
-      border-top: 1px solid #ccc;
-      margin-top: 40px;
-    }
-    /* Old-school button style */
-    button {
-      background: #004080;
-      color: white;
-      border: none;
-      padding: 10px 15px;
-      cursor: pointer;
-      font-family: "Courier New", Courier, monospace;
-      font-weight: bold;
-      letter-spacing: 1px;
-      border-radius: 3px;
-    }
-    button:hover {
-      background: #0066cc;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Symbian & Old Tech Blog</h1>
-  </header>
+<style>
+  body {
+    background: #e0e0e0 url('https://www.transparenttextures.com/patterns/diagmonds.png') repeat; /* tiled pattern */
+    font-family: Verdana, Tahoma, sans-serif;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header {
+    background: linear-gradient(to right, #3399ff, #003366);
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+    border: 3px solid #000066;
+    font-weight: bold;
+    font-size: 2.4em;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px #000;
+  }
+  nav {
+    background: #99ccff;
+    padding: 10px;
+    border: 2px inset #004080;
+    text-align: center;
+    margin-top: 10px;
+  }
+  nav a {
+    color: #000066;
+    text-decoration: underline;
+    margin: 0 15px;
+    font-weight: bold;
+  }
+  nav a:hover {
+    color: #003366;
+  }
+  #content {
+    background: #fff;
+    padding: 20px;
+    border: 3px outset #336699;
+    margin-top: 20px;
+    box-shadow: 3px 3px 0 #000066;
+  }
+  article {
+    border-bottom: 1px dashed #99ccff;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+  article h2 {
+    font-family: "Courier New", Courier, monospace;
+    font-weight: normal;
+    color: #003366;
+  }
+  article .date {
+    font-size: 0.85em;
+    color: #666;
+    margin-bottom: 10px;
+  }
+  aside {
+    float: right;
+    width: 180px;
+    background: #ccddff;
+    padding: 15px;
+    border: 2px groove #004080;
+    margin-left: 15px;
+    font-size: 0.9em;
+  }
+  footer {
+    clear: both;
+    border-top: 2px solid #003366;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.85em;
+    color: #333;
+    margin-top: 30px;
+  }
+  /* Old school button */
+  button {
+    background: #0066cc;
+    border: 2px outset #003366;
+    color: white;
+    padding: 8px 12px;
+    font-family: Verdana, Tahoma, sans-serif;
+    cursor: pointer;
+    margin-top: 8px;
+  }
+  button:hover {
+    background: #004080;
+  }
+</style>
 
+<body>
+  <header>SYMBIAN & OLD TECH BLOG</header>
   <nav>
     <a href="#symbian">Symbian</a>
     <a href="#nokia">Nokia</a>
-    <a href="#retro">Retro Tech</a>
+    <a href="#retro">Retro Gadgets</a>
   </nav>
+  
+  <div id="content">
+    <aside>
+      <h3>Blogroll</h3>
+      <ul>
+        <li><a href="#">Symbian Central</a></li>
+        <li><a href="#">Nokia Fanatics</a></li>
+        <li><a href="#">RetroTech Forums</a></li>
+        <li><a href="#">Old School Hacks</a></li>
+      </ul>
+      <h3>Visitor Count</h3>
+      <img src="https://hitwebcounter.com/counter/counter.php?page=1234567&style=0006&nbdigits=5&type=ip&initCount=1000" alt="Hit Counter" />
+    </aside>
 
-  <main>
     <article id="symbian">
       <h2>Symbian OS: The OG Smartphone Platform</h2>
-      <p>
-        Symbian was the king of smartphones before iOS and Android took over. From early Nokia models to Sony Ericsson, this OS powered a generation of mobile tech.
-      </p>
+      <div class="date">Posted on May 27, 2005</div>
+      <p>Symbian was the king of smartphones before iOS and Android took over. From early Nokia models to Sony Ericsson, this OS powered a generation of mobile tech.</p>
       <button onclick="alert('Stay tuned for more Symbian hacks!')">More Symbian Stuff</button>
     </article>
 
     <article id="nokia">
       <h2>Nokia Classics: Phones That Lasted Forever</h2>
-      <p>
-        Remember the indestructible Nokia 3310? These phones were simpler, built to last, and iconic in design.
-      </p>
+      <div class="date">Posted on May 25, 2005</div>
+      <p>Remember the indestructible Nokia 3310? These phones were simpler, built to last, and iconic in design.</p>
       <button onclick="alert('Nokia nostalgia loading...')">Nokia Vibes</button>
     </article>
 
     <article id="retro">
       <h2>Retro Tech Gadgets You Miss</h2>
-      <p>
-        From pagers to early MP3 players, retro tech still has a special place in our hearts. Let’s dive into the coolest gadgets from the past.
-      </p>
+      <div class="date">Posted on May 20, 2005</div>
+      <p>From pagers to early MP3 players, retro tech still has a special place in our hearts. Let’s dive into the coolest gadgets from the past.</p>
       <button onclick="alert('Retro tech coming your way!')">Explore More</button>
     </article>
-  </main>
-
+  </div>
   <footer>
-    &copy; 2025 Symbian & Old Tech Blog — Made with ❤️ for retro lovers
+    &copy; 2005 Symbian & Old Tech Blog — Made with ❤️ for retro lovers
   </footer>
 </body>
-</html>
